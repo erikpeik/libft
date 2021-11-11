@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 13:59:36 by emende            #+#    #+#             */
-/*   Updated: 2021/11/11 18:00:39 by emende           ###   ########.fr       */
+/*   Created: 2021/11/11 17:48:35 by emende            #+#    #+#             */
+/*   Updated: 2021/11/11 18:03:27 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	int	i;
 
-size_t	ft_strlen(const char *s);
-char	*ft_strcpy(char *dst, const char *src);
-char	*ft_strdup(const char *s1);
-int		ft_strcmp(const char *s1, const char *s2);
-
-#endif
+	i = 0;
+	while (s1[i] || s2[i])
+	{
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+		i++;
+	}
+	return (0);
+}
