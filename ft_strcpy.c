@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:37:37 by emende            #+#    #+#             */
-/*   Updated: 2021/11/11 12:43:58 by emende           ###   ########.fr       */
+/*   Updated: 2021/11/11 12:57:01 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@ char	*ft_strcpy(char *dst, const char *src)
 	int	i;
 
 	i = 0;
-	if (!src)
-		return (NULL);
 	while (src[i])
 	{
 		dst[i] = src[i];
