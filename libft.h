@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:59:36 by emende            #+#    #+#             */
-/*   Updated: 2021/11/14 17:29:00 by emende           ###   ########.fr       */
+/*   Updated: 2021/11/14 17:50:11 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int		ft_atoi(const char *str);
 int		ft_isdigit(int c);
 int		ft_isascii(int c);
 int		ft_isalpha(int c);
+int		ft_isalnum(int c);
 
 #endif
