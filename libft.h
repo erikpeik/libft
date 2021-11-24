@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:59:36 by emende            #+#    #+#             */
-/*   Updated: 2021/11/24 16:28:13 by emende           ###   ########.fr       */
+/*   Updated: 2021/11/24 17:35:21 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 
 size_t	ft_strlen(const char *s);
+size_t	ft_strlcat(char	*dst, const char *src, size_t dstsize);
 char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strdup(const char *s1);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
