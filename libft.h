@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                      :+:        +:+:+: :+:+:+    */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:59:36 by emende            #+#    #+#             */
-/*   Updated: 2021/11/24 23:13:07 by emende       ########## ###       ###    */
+/*   Updated: 2021/11/26 10:39:12 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strcat(char	*s1, const char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strstr(const char *haystack, const char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
