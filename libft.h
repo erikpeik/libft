@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:59:36 by emende            #+#    #+#             */
-/*   Updated: 2021/11/26 10:39:12 by emende           ###   ########.fr       */
+/*   Updated: 2021/11/26 21:01:59 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int		ft_tolower(int c);
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 
 /* Part 2 - Additional function */
 
