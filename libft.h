@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 13:59:36 by emende            #+#    #+#             */
-/*   Updated: 2021/11/27 19:36:35 by emende           ###   ########.fr       */
+/*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
+/*   Updated: 2021/11/28 16:01:04 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int		ft_isalnum(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
