@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 22:43:43 by emende            #+#    #+#             */
-/*   Updated: 2021/11/11 16:36:43 by emende           ###   ########.fr       */
+/*   Updated: 2021/11/29 23:22:46 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	if (!s)
-		return (0);
 	while (s[i])
 		i++;
 	return (i);
