@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 19:34:32 by emende            #+#    #+#             */
-/*   Updated: 2021/12/01 17:26:44 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/01 17:59:09 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			i++;
 		}
 	}
-	else
+	else if (len > 0)
 	{
-		if (len > 0)
-			i = len - 1;
-		else
-			return (dst);
+		i = len - 1;
 		while (i > 0)
 		{
 			((char *) dst)[i] = ((char *) src)[i];
@@ -40,5 +37,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 		((char *) dst)[i] = ((char *) src)[i];
 	}
-		return (dst);
+	return (dst);
 }
