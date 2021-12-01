@@ -6,12 +6,15 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/11/28 16:01:04 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/01 20:29:33 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define INT_MIN -2147483648
+# define INT_MAX +2147483647
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -54,5 +57,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
+void	ft_putnbr(int n);
 
 #endif
