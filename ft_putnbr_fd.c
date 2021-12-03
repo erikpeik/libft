@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 19:55:40 by emende            #+#    #+#             */
-/*   Updated: 2021/12/01 22:34:34 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/03 19:20:17 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ void	ft_putnbr_fd(int n, int fd)
 			ft_putnbr_fd(n % 10, fd);
 		}
 		else
-			ft_putchar_fd(n + '0', fd);
+			ft_putchar_fd((char ) n + '0', fd);
 	}
 }

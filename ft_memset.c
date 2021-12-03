@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 18:53:13 by emende            #+#    #+#             */
-/*   Updated: 2021/11/16 17:32:36 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/03 19:18:43 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		((unsigned char *) b)[i] = c;
+		((unsigned char *) b)[i] = (unsigned char ) c;
 		i++;
 	}
 	return (b);

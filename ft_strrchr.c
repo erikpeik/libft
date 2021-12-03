@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 20:27:11 by emende            #+#    #+#             */
-/*   Updated: 2021/12/01 19:06:10 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/03 19:19:30 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	int		i;
 
 	str = (char *)s;
-	i = ft_strlen(str);
+	i = (int ) ft_strlen(str);
 	while (i >= 0)
 	{
 		if (str[i] == c)
