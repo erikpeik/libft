@@ -6,19 +6,19 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 20:25:38 by emende            #+#    #+#             */
-/*   Updated: 2021/12/03 20:30:47 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/03 20:36:29 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striter(void *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	if (s)
 	{
-		while (*(char *)s)
+		while (*s)
 		{
-			f(&*(char *)s);
+			f(&*s);
 			s++;
 		}
 	}
