@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/03 20:37:53 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/03 21:00:58 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	*ft_memalloc(size_t size);
 
 char	*ft_strnew(size_t size);
+char	*ft_strmap(char const *s, char (*f)(char));
 
 #endif
