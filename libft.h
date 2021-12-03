@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/03 19:16:21 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/03 19:54:42 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_memdel(void **ap);
+void	ft_strdel(char **as);
 
 void	*ft_memalloc(size_t size);
 
