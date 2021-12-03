@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/03 23:40:30 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/04 01:54:03 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ char	*ft_strnew(size_t size);
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char	*ft_strtrim(char const *s);
 
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
