@@ -6,13 +6,13 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 00:16:15 by emende            #+#    #+#             */
-/*   Updated: 2021/12/04 01:23:01 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/04 16:24:17 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_get_start(char const *s)
+static int	ft_get_start(char const *s)
 {
 	int	i;
 
@@ -22,7 +22,7 @@ int	ft_get_start(char const *s)
 	return (i);
 }
 
-int	ft_get_end(char const *s)
+static int	ft_get_end(char const *s)
 {
 	int	i;
 
