@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/05 17:27:31 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/05 20:56:11 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <string.h>
 
 /* Part 1 - Libc function */
 
@@ -77,6 +78,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
+char	*ft_itoa(int n);
 
 char	**ft_strsplit(char const *s, char c);
 
