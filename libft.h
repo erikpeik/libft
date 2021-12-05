@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/04 13:41:37 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/05 16:15:06 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,9 @@ char	**ft_strsplit(char const *s, char c);
 
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
+
+/* Selfmade extra functions */
+
+size_t	ft_strclen(char const *s, char c);
 
 #endif
