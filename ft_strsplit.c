@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 13:40:14 by emende            #+#    #+#             */
-/*   Updated: 2021/12/05 15:53:52 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/05 16:17:45 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,19 +35,6 @@ static size_t	ft_splits(char const *s, char c)
 	return (res);
 }
 
-static size_t	ft_word_len(char const *s, char c, size_t i)
-{
-	size_t	count;
-
-	count = 0;
-	while (s[i] != c && i < ft_strlen(s))
-	{
-		count++;
-		i++;
-	}
-	return (count + 1);
-}
-
 static char	**ft_malloc_split(char const *s, char c, char **array)
 {
 	size_t	i;
@@ -59,11 +46,12 @@ static char	**ft_malloc_split(char const *s, char c, char **array)
 	{
 		if (s[i] != c)
 		{
-			array[word] = (char *) malloc(sizeof(char) * ft_word_len(s, c, i));
+			array[word] = (char *) malloc(sizeof(char) * \
+					(ft_strclen(&s[i], c) + 1));
 			if (!(array[word]))
 				return (NULL);
 			word++;
-			i += ft_word_len(s, c, i);
+			i += ft_strclen(&s[i], c) + 1;
 		}
 		else
 			i++;
