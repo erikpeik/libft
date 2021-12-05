@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 17:35:53 by emende            #+#    #+#             */
-/*   Updated: 2021/11/12 19:41:32 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/05 20:31:54 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	res = 0;
 	i = 0;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' || \
-			str[i] == '\f' || str[i] == ' ' || str[i] == '\r')
+	while (ft_isspace(str[i]))
 		i++;
 	if (str[i] == '-')
 	{
