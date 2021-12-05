@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 13:40:14 by emende            #+#    #+#             */
-/*   Updated: 2021/12/05 16:17:45 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/05 16:28:35 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,7 @@ char	**ft_strsplit(char const *s, char c)
 			array++;
 		}
 		free(array);
+		array = NULL;
 		return (array);
 	}
 	array = ft_fill_array(s, c, array);
