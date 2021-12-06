@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 23:54:04 by emende            #+#    #+#             */
-/*   Updated: 2021/12/04 00:08:43 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/06 19:37:51 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	join = (char *)malloc(sizeof(join) * ((ft_strlen(s1) + ft_strlen(s2)) + 1));
+	join = (char *)malloc(sizeof(char) * ((ft_strlen(s1) + ft_strlen(s2)) + 1));
 	if (!join)
 		return (NULL);
 	i = 0;
