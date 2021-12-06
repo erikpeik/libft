@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/05 20:56:11 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/06 20:59:06 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 size_t	ft_strclen(char const *s, char c);
 size_t	ft_intlen(int n);
 int		ft_isspace(int c);
+int		ft_ispunct(int c);
+char	*ft_strrev(char *s);
 
 #endif
