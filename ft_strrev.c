@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 19:42:03 by emende            #+#    #+#             */
-/*   Updated: 2021/12/06 20:45:29 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/06 21:23:46 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 char	*ft_strrev(char *str)
 {
 	size_t	start;
-	size_t	end; 
+	size_t	end;
 	char	c;
-/*	if (!str)
-		return (NULL); */
+
+	if (!str)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(str) - 1;
 	while (start < end)
@@ -28,6 +29,6 @@ char	*ft_strrev(char *str)
 		str[end] = c;
 		start++;
 		end--;
-	} 
+	}
 	return (str);
 }
