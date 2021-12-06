@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 19:26:20 by emende            #+#    #+#             */
-/*   Updated: 2021/12/04 01:56:35 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/06 19:10:08 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,6 @@
 
 void	ft_putstr(char const *s)
 {
-	int	i;
-
-	i = 0;
 	if (s)
-	{
-		while (s[i])
-		{
-			ft_putchar(s[i]);
-			i++;
-		}
-	}
+		write(1, &*s, ft_strlen(s));
 }

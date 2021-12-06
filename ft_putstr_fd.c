@@ -6,7 +6,7 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 22:09:47 by emende            #+#    #+#             */
-/*   Updated: 2021/12/04 01:59:04 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/06 19:07:39 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,5 @@
 void	ft_putstr_fd(char const *s, int fd)
 {
 	if (s)
-	{
-		while (*s)
-		{
-			ft_putchar_fd(*s, fd);
-			s++;
-		}
-	}
+		write(fd, &*s, ft_strlen(s));
 }
