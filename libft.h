@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/06 21:22:34 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/07 17:02:37 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,10 @@ char	**ft_strsplit(char const *s, char c);
 
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
+
+/* Bonus part */
+
+t_list	*ft_lstnew(void const *content, size_t content_size);
 
 /* Selfmade extra functions */
 

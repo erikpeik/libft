@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2021/12/06 21:09:28 by emende           ###   ########.fr        #
+#    Updated: 2021/12/07 17:03:01 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_intlen.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	   ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c \
 	   ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 	   ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c ft_strrev.c \
-	   ft_ispunct.c
+	   ft_ispunct.c ft_lstnew.c
 
 OBJS = ft_atoi.o ft_memalloc.o ft_putendl.o ft_strcmp.o ft_strmap.o \
 	   ft_strstr.o ft_bzero.o ft_memccpy.o ft_putendl_fd.o ft_strcpy.o \
@@ -36,7 +36,7 @@ OBJS = ft_atoi.o ft_memalloc.o ft_putendl.o ft_strcmp.o ft_strmap.o \
 	   ft_isprint.o ft_memset.o ft_strchr.o ft_strjoin.o ft_strnstr.o \
 	   ft_isspace.o ft_putchar.o ft_strclen.o ft_strlcat.o ft_strrchr.o \
 	   ft_itoa.o ft_putchar_fd.o ft_strclr.o ft_strlen.o ft_strsplit.o \
-	   ft_strrev.o ft_ispunct.o
+	   ft_strrev.o ft_ispunct.o ft_lstnew.o
 
 OPTIONS = -c
 
