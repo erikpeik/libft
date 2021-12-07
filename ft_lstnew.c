@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 21:18:47 by emende            #+#    #+#             */
-/*   Updated: 2021/12/07 20:08:21 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/07 23:57:18 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	else
 	{
 		list->content = (void *) malloc(content_size);
-		if (!(new->connect))
+		if (!(list->content))
 		{
-			free(new);
+			free(list);
 			return (NULL);
 		}
 		ft_memcpy(list->content, content, content_size);
