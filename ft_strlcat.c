@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:23:14 by emende            #+#    #+#             */
-/*   Updated: 2021/11/24 22:43:05 by emende       ########## ###       ###    */
+/*   Updated: 2021/12/08 20:42:31 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (ft_strlen(src));
 	else if (ft_strlen(dst) > dstsize)
 		return ((ft_strlen(buffer) + ft_strlen(src)) \
-				- (ft_strlen(buffer) - dstsize));
+				-(ft_strlen(buffer) - dstsize));
 	while (z < ft_strlen(src) && i < dstsize - 1)
 	{
 		dst[i] = src[z];
