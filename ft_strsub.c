@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 23:38:22 by emende            #+#    #+#             */
-/*   Updated: 2021/12/03 23:53:08 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/09 20:23:09 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	if (!s)
-		return ((char *) NULL);
+		return (NULL);
 	sub = (char *) malloc(sizeof(*s) * (len + 1));
 	if (!sub)
-		return ((char *) NULL);
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{
