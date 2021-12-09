@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2021/12/07 17:03:01 by emende           ###   ########.fr        #
+#    Updated: 2021/12/09 22:40:55 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,18 +25,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_intlen.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	   ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c ft_strrev.c \
 	   ft_ispunct.c ft_lstnew.c
 
-OBJS = ft_atoi.o ft_memalloc.o ft_putendl.o ft_strcmp.o ft_strmap.o \
-	   ft_strstr.o ft_bzero.o ft_memccpy.o ft_putendl_fd.o ft_strcpy.o \
-	   ft_strmapi.o ft_strsub.o ft_intlen.o ft_memchr.o ft_putnbr.o \
-	   ft_strdel.o ft_strncat.o ft_strtrim.o ft_isalnum.o ft_memcmp.o \
-	   ft_putnbr_fd.o ft_strdup.o ft_strncmp.o ft_tolower.o ft_isalpha.o \
-	   ft_memcpy.o ft_putstr.o ft_strequ.o ft_strncpy.o ft_toupper.o \
-	   ft_isascii.o ft_memdel.o ft_putstr_fd.o ft_striter.o ft_strnequ.o \
-	   ft_isdigit.o ft_memmove.o ft_strcat.o ft_striteri.o ft_strnew.o \
-	   ft_isprint.o ft_memset.o ft_strchr.o ft_strjoin.o ft_strnstr.o \
-	   ft_isspace.o ft_putchar.o ft_strclen.o ft_strlcat.o ft_strrchr.o \
-	   ft_itoa.o ft_putchar_fd.o ft_strclr.o ft_strlen.o ft_strsplit.o \
-	   ft_strrev.o ft_ispunct.o ft_lstnew.o
+OBJS = $(SRCS:.c=.o)
 
 OPTIONS = -c
 
@@ -46,8 +35,7 @@ all: $(NAME)
 
 $(NAME):
 	gcc $(CFLAG) $(OPTIONS) $(SRCS)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
 	/bin/rm -f $(OBJS)
