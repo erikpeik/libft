@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 21:58:18 by emende            #+#    #+#             */
-/*   Updated: 2021/12/03 22:21:56 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/09 20:06:20 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*str;
 	int		i;
 
-	if (!s)
-		return ((char *) NULL);
+	if (!s || !f)
+		return (NULL);
 	str = (char *) malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!str)
-		return ((char *) NULL);
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{
