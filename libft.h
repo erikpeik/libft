@@ -6,15 +6,12 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/07 17:02:37 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/09 18:16:17 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-# define INT_MIN -2147483648
-# define INT_MAX +2147483647
 
 # include <stdlib.h>
 # include <unistd.h>
