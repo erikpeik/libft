@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 00:36:54 by emende            #+#    #+#             */
-/*   Updated: 2021/11/29 18:20:07 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/09 19:15:17 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		if (((unsigned char *)src)[i] == (unsigned char)c)
-			return (((void *)dst + (i + 1)));
+			return (dst + (i + 1));
 		i++;
 	}
 	return (NULL);
