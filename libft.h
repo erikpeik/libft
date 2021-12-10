@@ -6,7 +6,7 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 16:00:48 by emende            #+#    #+#             */
-/*   Updated: 2021/12/09 18:16:17 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/10 20:22:11 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 /* Bonus part */
 
 t_list	*ft_lstnew(void const *content, size_t content_size);
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 
 /* Selfmade extra functions */
 
