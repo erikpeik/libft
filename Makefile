@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2021/12/10 20:14:59 by emende           ###   ########.fr        #
+#    Updated: 2021/12/11 19:32:05 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,14 +34,14 @@ CFLAG = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME):
-	gcc $(CFLAG) $(OPTIONS) $(SRCS)
-	ar rcs $(NAME) $(OBJS)
+	@gcc $(CFLAG) $(OPTIONS) $(SRCS)
+	@ar rcs $(NAME) $(OBJS)
 
 clean:
-	/bin/rm -f $(OBJS)
+	@/bin/rm -f $(OBJS)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	@/bin/rm -f $(NAME)
 
 re: fclean all
 
