@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2021/12/11 19:32:05 by emende           ###   ########.fr        #
+#    Updated: 2021/12/12 23:33:43 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ SRCS = ft_atoi.c ft_bzero.c ft_intlen.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	   ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c \
 	   ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
 	   ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c ft_strrev.c \
-	   ft_ispunct.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c
+	   ft_ispunct.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
+	   ft_lstiter.c ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -34,13 +35,18 @@ CFLAG = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME):
+	@echo "[LIBFT] Making objects..."
 	@gcc $(CFLAG) $(OPTIONS) $(SRCS)
+	@echo "[LIBFT] Crating library from object files..."
 	@ar rcs $(NAME) $(OBJS)
+	@echo "[LIBFT] Generated archive libft.a"
 
 clean:
+	@echo "[LIBFT] Cleaning object files..."
 	@/bin/rm -f $(OBJS)
 
 fclean: clean
+	@echo "[LIBFT] Removing libft.a library file..."
 	@/bin/rm -f $(NAME)
 
 re: fclean all
