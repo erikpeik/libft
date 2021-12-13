@@ -6,11 +6,19 @@
 /*   By: emende <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 22:44:44 by emende            #+#    #+#             */
-/*   Updated: 2021/12/12 23:14:17 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/13 17:25:46 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_free_list(t_list **al)
+{
+	if (!(*al)->next)
+		ft_free_lst(&(*al)->next);
+	free((*al)->content);
+	free(*al);
+}
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
@@ -21,10 +29,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 		return (NULL);
 	new = f(lst);
 	if (!new)
-	{
-		free(new);
 		return (NULL);
-	}
 	start = new;
 	while (lst->next)
 	{
@@ -32,7 +37,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 		new->next = f(lst);
 		if (!(new->next))
 		{
-			free(new->next);
+			ft_free_lst(&start);
 			return (NULL);
 		}
 		new = new->next;
