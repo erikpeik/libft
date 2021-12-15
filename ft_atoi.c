@@ -6,12 +6,11 @@
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 17:35:53 by emende            #+#    #+#             */
-/*   Updated: 2021/12/05 20:31:54 by emende           ###   ########.fr       */
+/*   Updated: 2021/12/15 18:51:00 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {
