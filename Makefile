@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2021/12/12 23:33:43 by emende           ###   ########.fr        #
+#    Updated: 2021/12/20 13:32:31 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ OBJS = $(SRCS:.c=.o)
 
 OPTIONS = -c
 
-CFLAG = -Wall -Wextra -Werror
+CFLAG = -Wall -Wextra -Werror -Wconversion
 
 all: $(NAME)
 
