@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2021/12/27 14:10:20 by emende           ###   ########.fr        #
+#    Updated: 2022/01/16 19:44:45 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,21 +32,27 @@ OPTIONS = -c
 
 CFLAG = -Wall -Wextra -Werror -Wconversion
 
+RED = \033[0;31m
+LGRAY = \033[1;30m
+LGREEN = \033[1;32m
+WHITE = \033[1;37m
+
+
 all: $(NAME)
 
 $(NAME):
-	@echo "[LIBFT] Making objects..."
+	@echo "$(LGRAY)[LIBFT] $(LGREEN)Making objects..."
 	@gcc $(CFLAG) $(OPTIONS) $(SRCS)
-	@echo "[LIBFT] Crating library from object files..."
+	@echo "$(LGRAY)[LIBFT] $(LGREEN)Crating library from object files..."
 	@ar rcs $(NAME) $(OBJS)
-	@echo "[LIBFT] Generated archive libft.a"
+	@echo "$(LGRAY)[LIBFT] $(LGREEN)Generated archive libft.a"
 
 clean:
-	@echo "[LIBFT] Cleaning object files..."
+	@echo "$(LGRAY)[LIBFT] $(RED)Cleaning object files..."
 	@/bin/rm -f $(OBJS)
 
 fclean: clean
-	@echo "[LIBFT] Removing libft.a library file..."
+	@echo "$(LGRAY)[LIBFT] $(RED)Removing libft.a library file..."
 	@/bin/rm -f $(NAME)
 
 re: fclean all
