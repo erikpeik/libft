@@ -6,7 +6,7 @@
 #    By: emende <emende@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/29 15:19:20 by emende            #+#    #+#              #
-#    Updated: 2022/01/16 20:24:26 by emende           ###   ########.fr        #
+#    Updated: 2022/01/16 21:05:18 by emende           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SRCS_LIST = ft_atoi.c ft_bzero.c ft_intlen.c ft_isalnum.c ft_isalpha.c \
 			ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c \
 			ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c \
 			ft_toupper.c ft_strrev.c ft_ispunct.c ft_lstnew.c ft_lstdelone.c \
-			ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_strndup.c
+			ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_strndup.c \
+			get_next_line.c
 
 SRCS = $(addprefix $(SRCS_DIR), $(SRCS_LIST))
 
