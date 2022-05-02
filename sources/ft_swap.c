@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 19:55:46 by emende            #+#    #+#             */
-/*   Updated: 2021/12/10 20:16:09 by emende           ###   ########.fr       */
+/*   Created: 2022/03/30 21:51:02 by emende            #+#    #+#             */
+/*   Updated: 2022/03/30 21:53:30 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/* Swapping two integers a & b. */
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+void	ft_swap(int *a, int *b)
 {
-	t_list	*list;
-	t_list	*temp;
+	int	temp;
 
-	list = *alst;
-	while (list)
-	{
-		temp = list->next;
-		del(list->content, list->content_size);
-		free(list);
-		list = temp;
-	}
-	*alst = NULL;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

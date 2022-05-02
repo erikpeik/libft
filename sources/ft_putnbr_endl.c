@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_endl.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 19:55:46 by emende            #+#    #+#             */
-/*   Updated: 2021/12/10 20:16:09 by emende           ###   ########.fr       */
+/*   Created: 2021/12/01 19:55:40 by emende            #+#    #+#             */
+/*   Updated: 2022/04/06 16:48:34 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* ft_putnbr(), but with newline at end */
+
 #include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+void	ft_putnbr_endl(int n)
 {
-	t_list	*list;
-	t_list	*temp;
-
-	list = *alst;
-	while (list)
+	if (n == -2147483648)
+		ft_putstr("-2147483648");
+	else if (n < 0)
 	{
-		temp = list->next;
-		del(list->content, list->content_size);
-		free(list);
-		list = temp;
+		ft_putchar('-');
+		ft_putnbr(-n);
 	}
-	*alst = NULL;
+	else if (n > 9)
+	{
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
+	}
+	else
+		ft_putchar((char ) n + '0');
+	ft_putchar('\n');
 }

@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_arrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 19:55:46 by emende            #+#    #+#             */
-/*   Updated: 2021/12/10 20:16:09 by emende           ###   ########.fr       */
+/*   Created: 2022/04/01 19:43:48 by emende            #+#    #+#             */
+/*   Updated: 2022/04/01 19:48:21 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Function counts number of rows in two-dimensional array */
+
 #include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+size_t	ft_arrlen(const void **arr)
 {
-	t_list	*list;
-	t_list	*temp;
+	size_t	i;
 
-	list = *alst;
-	while (list)
-	{
-		temp = list->next;
-		del(list->content, list->content_size);
-		free(list);
-		list = temp;
-	}
-	*alst = NULL;
+	i = 0;
+	while (arr[i])
+		i++;
+	return (i);
 }

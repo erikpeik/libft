@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emende <emende@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/10 19:55:46 by emende            #+#    #+#             */
-/*   Updated: 2021/12/10 20:16:09 by emende           ###   ########.fr       */
+/*   Created: 2022/03/28 16:54:37 by emende            #+#    #+#             */
+/*   Updated: 2022/03/28 17:11:22 by emende           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+int	ft_abs(int i)
 {
-	t_list	*list;
-	t_list	*temp;
-
-	list = *alst;
-	while (list)
-	{
-		temp = list->next;
-		del(list->content, list->content_size);
-		free(list);
-		list = temp;
-	}
-	*alst = NULL;
+	if (i < 0)
+		return (-i);
+	return (i);
 }
