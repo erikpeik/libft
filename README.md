@@ -3,4 +3,4 @@
 
 Modified after submitting. [Click here](https://github.com/erikpeik/libft/tree/group-2) to get my original branch.
 
-[![emende's Libft score](https://badge42.herokuapp.com/api/project/emende/Libft)](https://github.com/JaeSeoKim/badge42)
+[![emende's 42 Libft Score](https://badge42.vercel.app/api/v2/cl1nsfqfo001109mvs5t8vwj5/project/2403011)](https://github.com/JaeSeoKim/badge42)
